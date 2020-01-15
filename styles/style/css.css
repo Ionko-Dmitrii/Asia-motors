@@ -456,12 +456,10 @@ li {
 
 .special-offers-slider .slick-prev {
     background: url("../img/png/left.png") no-repeat center;
-    right: 400px;
 }
 
 .special-offers-slider .slick-next {
     background: url("../img/png/right.png") no-repeat center;
-    left: 400px;
 }
 
 .slider-number {
@@ -2953,3 +2951,13 @@ li {
 }
 
 /*contact page*/
+
+
+#bb1{
+    height: 50px;
+    background: black;
+    margin: 100px auto 0 auto;
+}
+
+
+

@@ -514,12 +514,23 @@
         let pp = document.querySelector('.slick-prev');
 
         if (document.body.clientWidth < 769) {
-            bb.style.left = cc.length * 43 + 12 + 'px';
-            pp.style.right = cc.length * 43 + 12 + 'px';
+            bb.style.left = cc.length * 38 + 52 + 'px';
+            pp.style.right = cc.length * 38 + 52 + 'px';
         } else {
             bb.style.left = cc.length * 58 + 52 + 'px';
             pp.style.right = cc.length * 58 + 52 + 'px';
         }
+
+        window.addEventListener('resize', function(){
+            if (document.body.clientWidth < 769) {
+                bb.style.left = cc.length * 38 + 52 + 'px';
+                pp.style.right = cc.length * 38 + 52 + 'px';
+            } else {
+                bb.style.left = cc.length * 58 + 52 + 'px';
+                pp.style.right = cc.length * 58 + 52 + 'px';
+            }
+        });
+
         slider.on('init reInit afterChange', function (event, slick, currentSlide) {
             let i = (currentSlide ? currentSlide : 0) + 1;
             if (i < 10) {
