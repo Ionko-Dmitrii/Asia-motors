@@ -1449,7 +1449,7 @@ li {
 }
 
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
     .special-offers-slider .slider .pop {
         height: 300px;
     }
@@ -1459,6 +1459,10 @@ li {
         position: relative;
         top: 25%;
         max-height: 540px;
+    }
+
+    .special-offers-car {
+        margin: 0 auto;
     }
 
     .slider-number {
